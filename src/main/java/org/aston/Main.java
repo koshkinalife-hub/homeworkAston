@@ -23,64 +23,72 @@ public class Main {
         printString("Хоккейный сезон начался", 5);
         // вопрос о високосный ли год
         System.out.println(isYear (2000)); //на 400 делится
-        System.out.println(isYear(1700)); //на 100
-        System.out.println(isYear(2025));
+        System.out.println(isYear (1700)); //на 100
+        System.out.println(isYear (2025)); // не високосный
+        //
+        flipArray();
+        fillArray();
+        changeArray();
+        fillDiagonal(6);
+        int[] arr = createArray(8, 5);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
-
+// первый пункт домашки
     public static void printThreeWords() {
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
     }
-// пункт 2 домашки
-public static void checkSumSign() {
-    int a = -18;
-    int b = 32;
 
-    int sum = a + b;
-    if (sum >= 0) {
-    System.out.println("Сумма положительная");
+    // пункт 2 домашки
+    public static void checkSumSign() {
+        int a = -18;
+        int b = 32;
+
+        int sum = a + b;
+        if (sum >= 0) {
+            System.out.println("Сумма положительная");
+        } else {
+            System.out.println("Сумма отрицательная");
+        }
     }
-    else {
-    System.out.println("Сумма отрицательная");
-    }
-    }
+
     // пункт 3 домашки
-    public  static void printColor() {
+    public static void printColor() {
         int value = 87;
-                if (value <= 0) {
-                    System.out.println("Красный");
-                }
-                else if (value > 0 && value <= 100) {
-                    System.out.println("Жёлтый");
-                }
-                else {
-                    System.out.println("Зелёный");
-                }
-                }
+        if (value <= 0) {
+            System.out.println("Красный");
+        } else if (value > 0 && value <= 100) {
+            System.out.println("Жёлтый");
+        } else {
+            System.out.println("Зелёный");
+        }
+    }
 
-   //Пункт 4 дз
+    //Пункт 4 дз
     public static void compareNumber() {
         int a = 33;
         int b = 26;
         if (a >= b) {
             System.out.println("a >= b");
-        }
-        else {
+        } else {
             System.out.println("a < b");
         }
     }
+
     // Пункт 5 домашки
-public static boolean isSumWithinRange(int a, int b) {
-     int sum = a + b;
-     return sum >= 10 && sum <= 20;
+    public static boolean isSumWithinRange(int a, int b) {
+        int sum = a + b;
+        return sum >= 10 && sum <= 20;
     }
+
     // Пункт 6 Домашки
     public static void printnumberSign(int number) {
         if (number >= 0) {
             System.out.println("Число положительное");
-        }
-        else {
+        } else {
             System.out.println("Число отрицательное");
         }
     }
@@ -91,13 +99,14 @@ public static boolean isSumWithinRange(int a, int b) {
     }
 
     // пункт 8 домашки строка в несколько раз
-    public static void printString (String str, int times) {
-        for (int i = 0; i< times; i++) {
+    public static void printString(String str, int times) {
+        for (int i = 0; i < times; i++) {
             System.out.println(str);
         }
     }
+
     // пункт 9 домашки
-    public static boolean isYear (int year) {
+    public static boolean isYear(int year) {
         // делится на 400 = високосный/сначала проверка на 400,100,4 чтобы не сбить логичку!
         if (year % 400 == 0) {
             return true;
@@ -107,10 +116,75 @@ public static boolean isSumWithinRange(int a, int b) {
             return false;
         }
         // делится на 4 = високосный
-        if (year % 4 == 0 ){
+        if (year % 4 == 0) {
             return true;
         }
         // все остальные года не високосные
-       else return false;
+        else return false;
     }
+
+    // 10 пункт домашки
+    public static void flipArray() {
+        int[] number = {1, 1, 1, 0, 0, 0, 1, 0, 1, 0};
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] == 0) {
+                number[i] = 1;
+            } else {
+                number[i] = 0;
+            }
+        }
+        for (int i = 0; i < number.length; i++) {
+            System.out.print(number[i] + " ");
+        }
     }
+    // 11 пункт домашки
+    public static void fillArray() {
+        int[] arr = new int[100]; //  делаем массив на сотку
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i + 1;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+    // 12 пункт домашки
+    public static void changeArray() {
+        int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 6) {
+                arr[i] = arr[i] * 2;
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+    // 13 пункт домашки
+    public static void fillDiagonal(int size) {
+        int[][] arr = new int[size][size];
+
+        for (int i = 0; i < size; i++) {
+            arr[i][i] = 1;
+        }
+
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+// 14 пункт
+public static int[] createArray(int len, int initialValue) {
+    int[] arr = new int[len];
+    for (int i = 0; i < arr.length; i++) {
+        arr[i] = initialValue;
+    }
+    return arr;
+
+}
+}
