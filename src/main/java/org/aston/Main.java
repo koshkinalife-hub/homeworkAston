@@ -3,10 +3,11 @@ package org.aston;
 public class Main {
 
     public static void main(String[] args) {
-        // Вызов метода
+        // Вызов методов
         printThreeWords();
-        // Сумма положительная или отрицательная выбор
         checkSumSign();
+        printColor();
+        compareNumber();
     }
 
     public static void printThreeWords() {
@@ -15,8 +16,6 @@ public class Main {
         System.out.println("Apple");
     }
 
-
-// Сумма отрицательная или положительная
 public static void checkSumSign() {
     int a = -18;
     int b = 32;
@@ -29,4 +28,27 @@ public static void checkSumSign() {
     System.out.println("Сумма отрицательная");
     }
     }
-}
+    public  static void printColor() {
+        int value = 87;
+                if (value <= 0) {
+                    System.out.println("Красный");
+                }
+                else if (value > 0 && value <= 100) {
+                    System.out.println("Жёлтый");
+                }
+                else {
+                    System.out.println("Зелёный");
+                }
+                }
+    public static void compareNumber() {
+        int a = 33;
+        int b = 26;
+        if (a >= b) {
+            System.out.println("a >= b");
+        }
+        else {
+            System.out.println("a < b");
+        }
+    }
+
+    }
