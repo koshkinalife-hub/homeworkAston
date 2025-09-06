@@ -3,11 +3,14 @@ package org.aston;
 public class Main {
 
     public static void main(String[] args) {
-        // Вызов методов
+        // Вызов методов без параметров
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumber();
+        // вызов метода с параметрами
+        boolean result = isSumWithinRange(18, 7);
+        System.out.println("Результат: " + result);
     }
 
     public static void printThreeWords() {
@@ -50,5 +53,8 @@ public static void checkSumSign() {
             System.out.println("a < b");
         }
     }
-
+public static boolean isSumWithinRange(int a, int b) {
+     int sum = a + b;
+     return sum >= 10 && sum <= 20;
+    }
     }
