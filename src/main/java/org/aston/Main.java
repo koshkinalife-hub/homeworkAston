@@ -11,6 +11,10 @@ public class Main {
         // вызов метода с параметрами
         boolean result = isSumWithinRange(18, 7);
         System.out.println("Результат: " + result);
+        // проверка метода
+        printnumberSign(0);
+        printnumberSign(81);
+        printnumberSign(-23);
     }
 
     public static void printThreeWords() {
@@ -18,7 +22,7 @@ public class Main {
         System.out.println("Banana");
         System.out.println("Apple");
     }
-
+// пункт 2 домашки
 public static void checkSumSign() {
     int a = -18;
     int b = 32;
@@ -31,6 +35,7 @@ public static void checkSumSign() {
     System.out.println("Сумма отрицательная");
     }
     }
+    // пункт 3 домашки
     public  static void printColor() {
         int value = 87;
                 if (value <= 0) {
@@ -43,6 +48,8 @@ public static void checkSumSign() {
                     System.out.println("Зелёный");
                 }
                 }
+
+   //Пункт 4 дз
     public static void compareNumber() {
         int a = 33;
         int b = 26;
@@ -53,8 +60,18 @@ public static void checkSumSign() {
             System.out.println("a < b");
         }
     }
+    // Пункт 5 домашки
 public static boolean isSumWithinRange(int a, int b) {
      int sum = a + b;
      return sum >= 10 && sum <= 20;
+    }
+    // Пункт 6 Домашки
+    public static void printnumberSign(int number) {
+        if (number >= 0) {
+            System.out.println("Число положительное");
+        }
+        else {
+            System.out.println("Число отрицательное");
+        }
     }
     }
