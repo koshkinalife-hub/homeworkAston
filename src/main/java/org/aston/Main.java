@@ -41,7 +41,6 @@ public class Main {
         System.out.println("Banana");
         System.out.println("Apple");
     }
-
     // пункт 2 домашки
     public static void checkSumSign() {
         int a = -18;
@@ -54,7 +53,6 @@ public class Main {
             System.out.println("Сумма отрицательная");
         }
     }
-
     // пункт 3 домашки
     public static void printColor() {
         int value = 87;
@@ -66,7 +64,6 @@ public class Main {
             System.out.println("Зелёный");
         }
     }
-
     //Пункт 4 дз
     public static void compareNumber() {
         int a = 33;
@@ -77,7 +74,6 @@ public class Main {
             System.out.println("a < b");
         }
     }
-
     // Пункт 5 домашки
     public static boolean isSumWithinRange(int a, int b) {
         int sum = a + b;
@@ -186,5 +182,6 @@ public static int[] createArray(int len, int initialValue) {
     }
     return arr;
 
-}
+}//не работает нифига
+
 }
