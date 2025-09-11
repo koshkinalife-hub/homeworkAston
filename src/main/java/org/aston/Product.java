@@ -28,4 +28,3 @@ public class Product {
         System.out.println("Забронирован: " + (isBooked ? "Да" : "Нет")); //"?" заменяет if{} else{}
     }
 }
-//
