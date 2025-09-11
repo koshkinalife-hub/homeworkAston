@@ -4,15 +4,13 @@ public class Main {
     public static void main(String[] args) {
         Product[] productsArray = new Product[5];
         productsArray[0] = new Product("Samsung S25 Ultra", "01.02.2025", "Samsung Corp.", "Korea", 5599, true);
-        productsArray[1] = new Product("iPhone 16", "01.09.2025", "Apple Inc.", "USA", 8999, false);
-        productsArray[2] = new Product("Xiaomi Mi 15", "12.01.2025", "Xiaomi", "China", 3999, true);
-        productsArray[3] = new Product("Sony TV", "15.03.2025", "Sony", "Japan", 4999, false);
-        productsArray[4] = new Product("LG Fridge", "20.04.2025", "LG", "Korea", 2999, true);
+        productsArray[1] = new Product("iPhone 55", "13.01.2055", "Apple Inc.", "USA", 55555, false);
+        productsArray[2] = new Product("Xiaomi 11", "18.05.2025", "Xiaomi", "China", 3333, false);
+        productsArray[3] = new Product("Kia Sorento", "28.12.2024", "Kia Motors", "Korea", 88888, true);
+        productsArray[4] = new Product("Hyundai 666", "13.03.2023", "Hyundai Motor", "Korea", 139999, true);
 
-        // Вывод информации о всех
         for (Product product : productsArray) {
             product.printInfo();
-            System.out.println("------------");
         }
     }
 }
