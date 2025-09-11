@@ -18,13 +18,13 @@ public class Product {
         this.isBooked = isBooked;
     }
 
-    // Метод для вывода информации
+    // вывод
     public void printInfo() {
         System.out.println("Название: " + name);
         System.out.println("Дата производства: " + productionDate);
         System.out.println("Производитель: " + manufacturer);
         System.out.println("Страна: " + country);
         System.out.println("Цена: " + price + " $");
-        System.out.println("Забронирован: " + (isBooked ? "Да" : "Нет"));
+        System.out.println("Забронирован: " + (isBooked ? "Да" : "Нет")); //"?" заменяет if{} else{}
     }
 }

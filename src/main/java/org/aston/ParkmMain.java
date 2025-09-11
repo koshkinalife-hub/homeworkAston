@@ -10,7 +10,7 @@ public class ParkmMain {
         Park.Attraction zipline = park.new Attraction("Тросс", "8:00 - 16:00", 10);
         Park.Attraction drop = park.new Attraction("Башня падения", "21:00 - 23:00", 50);
 
-        // Выводим
+        // Вывод
         System.out.println("Парк: " + park.name);
         carousel.printInfo();
         zipline.printInfo();
