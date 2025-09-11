@@ -23,6 +23,7 @@ public class Park {
             System.out.println("Аттракцион: " + attractionName);
             System.out.println("Время работы: " + workingHours);
             System.out.println("Цена: " + price + " руб.");
+            System.out.println("---Я строка разделения---");
         }
     }
 }
