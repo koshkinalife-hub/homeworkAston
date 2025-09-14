@@ -5,6 +5,7 @@ public class Bowl {
 
     public Bowl(int food) {
         this.food = food;
+
     }
 
     public int getFood() {

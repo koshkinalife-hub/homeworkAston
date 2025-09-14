@@ -18,9 +18,9 @@ public abstract class Animal {
     }
 
     public void run(int distance){
-        System.out.println(name + " пробежал " + distance + " м.");
+        System.out.println(name + " пробежал " + distance + " м");
     };
     public void swim(int distance){
-        System.out.println(name + " проплыл " + distance + " м.");
+        System.out.println(name + " проплыл " + distance + " м");
     };
 }

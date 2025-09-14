@@ -17,7 +17,7 @@ public class Main {
         dog.swim(8);
 
         cats[0].run(150);
-        cats[0].swim(5); // кот не умеет плавать
+        cats[0].swim(5);
 
         Bowl bowl = new Bowl(20);
         for (Cat cat : cats) {
@@ -47,7 +47,7 @@ public class Main {
             System.out.println("Периметр: " + s.getPerimeter());
             System.out.println("Цвет заливки: " + s.getFillColor());
             System.out.println("Цвет границы: " + s.getBorderColor());
-            System.out.println("--------------------");
+            System.out.println("---");
         }
     }
 }

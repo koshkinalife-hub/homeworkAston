@@ -1,7 +1,7 @@
 package org.aston;
 
 public class Cat extends Animal {
-    private static int catCount;
+    private static int catCount=0;
     private boolean full;
 
     public Cat(String name) {
@@ -13,7 +13,7 @@ public class Cat extends Animal {
 
     public void run(int distance) {
         if (distance <= 200) {
-            System.out.println(getName() + " пробежал " + distance + " м.");
+            System.out.println(getName() + " пробежал " + distance + " м");
         } else {
             System.out.println(getName() + " не может бегать так далеко");
         }

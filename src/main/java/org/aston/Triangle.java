@@ -18,6 +18,7 @@ public class Triangle implements Shape {
     public double getArea() {
         double p = getPerimeter() / 2.0;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+
     }
 
 

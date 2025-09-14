@@ -11,7 +11,7 @@ public class Dog extends Animal {
 
     public void run(int distance) {
         if (distance <= 500) {
-            System.out.println(getName() + " пробежал " + distance + " м.");
+            System.out.println(getName() + " пробежал " + distance + " м");
         } else {
             System.out.println(getName() + " не может бегать так далеко");
         }
@@ -20,7 +20,7 @@ public class Dog extends Animal {
 
     public void swim(int distance) {
         if (distance <= 10) {
-            System.out.println(getName() + " проплыл " + distance + " м.");
+            System.out.println(getName() + " проплыл " + distance + " м");
         } else {
             System.out.println(getName() + " не умеет плавать так далеко");
         }
