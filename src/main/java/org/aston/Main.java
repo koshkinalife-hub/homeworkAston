@@ -1,16 +1,53 @@
 package org.aston;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        Product[] productsArray = new Product[5];
-        productsArray[0] = new Product("Samsung S25 Ultra", "01.02.2025", "Samsung Corp.", "Korea", 5599, true);
-        productsArray[1] = new Product("iPhone 55", "13.01.2055", "Apple Inc.", "USA", 55555, false);
-        productsArray[2] = new Product("Xiaomi 11", "18.05.2025", "Xiaomi", "China", 3333, false);
-        productsArray[3] = new Product("Kia Sorento", "28.12.2024", "Kia Motors", "Korea", 88888, true);
-        productsArray[4] = new Product("Hyundai 666", "13.03.2023", "Hyundai Motor", "Korea", 139999, true);
+        // -----Задание 1----Животные---
+        Dog dog = new Dog("Тузик");
+        Cat[] cats = {
+                new Cat("Фантик"),
+                new Cat("Черныш"),
+                new Cat("Снежок")
+        };
 
-        for (Product product : productsArray) {
-            product.printInfo();
+        dog.run(300);
+        dog.swim(8);
+
+        cats[0].run(150);
+        cats[0].swim(5); // кот не умеет плавать
+
+        Bowl bowl = new Bowl(20);
+        for (Cat cat : cats) {
+            cat.eat(bowl, 10);
+        }
+
+        System.out.println("Остаток еды в миске: " + bowl.getFood());
+        for (Cat cat : cats) {
+            System.out.println(cat.getName() + " сыт: " + (cat.isFull() ? "да" : "нет"));
+        }
+
+        System.out.println("Всего животных: " + Animal.getAnimalCount());
+        System.out.println("Всего котов: " + Cat.getCatCount());
+        System.out.println("Всего собак: " + Dog.getDogCount());
+
+
+        // -------Задание 2---Фигуры----
+        System.out.println("Геометрические фигуры");
+        List<Shape> shapes = new ArrayList<>();
+        shapes.add(new Circle(13, "Красный", "Белый"));
+        shapes.add(new Rectangle(5, 9, "Черный", "Бордовый"));
+        shapes.add(new Triangle(3, 4, 5, "Голубой", "Синий"));
+
+        for (Shape s : shapes) {
+            System.out.println(s.getClass().getSimpleName());
+            System.out.println("Площадь: " + s.getArea());
+            System.out.println("Периметр: " + s.getPerimeter());
+            System.out.println("Цвет заливки: " + s.getFillColor());
+            System.out.println("Цвет границы: " + s.getBorderColor());
+            System.out.println("--------------------");
         }
     }
 }
