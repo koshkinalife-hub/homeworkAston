@@ -15,6 +15,7 @@ public class Dog extends Animal {
         } else {
             System.out.println(getName() + " не может бегать так далеко");
         }
+
     }
 
 

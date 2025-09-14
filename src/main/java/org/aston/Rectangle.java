@@ -11,7 +11,6 @@ public class Rectangle implements Shape {
         this.height = height;
         this.fillColor = fillColor;
         this.borderColor = borderColor;
-
     }
 
 

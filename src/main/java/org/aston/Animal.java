@@ -23,4 +23,5 @@ public abstract class Animal {
     public void swim(int distance){
         System.out.println(name + " проплыл " + distance + " м");
     };
+
 }

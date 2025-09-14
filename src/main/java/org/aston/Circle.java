@@ -26,7 +26,6 @@ public class Circle implements Shape {
         return fillColor;
     }
 
-
     public String getBorderColor() {
         return borderColor;
 

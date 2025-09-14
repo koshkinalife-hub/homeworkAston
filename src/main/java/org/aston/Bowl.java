@@ -16,6 +16,7 @@ public class Bowl {
         if (amount <= food) {
             food -= amount;
         }
+
     }
 
     public void addFood(int amount) {

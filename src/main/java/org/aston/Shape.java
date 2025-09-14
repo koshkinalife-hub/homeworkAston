@@ -5,5 +5,4 @@ public interface Shape {
     double getPerimeter();
     String getFillColor();
     String getBorderColor();
-
 }
