@@ -4,7 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 public class Page {
     //Заголовок
-    private final SelenideElement blockTitle = $("section.payment h2");
+    private final SelenideElement blockTitle = $("#pay-section.personal h2");
 
     // Вкладка услуги связи
     private final SelenideElement phoneConnection = $("#connection-phone");
